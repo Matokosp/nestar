@@ -75,7 +75,7 @@ function myFunction(x) {
   }
 
   showListBtn.on('click', function() {
-    jobListHiddenEle.toggleClass('show-list')
+    $('#expand').toggleClass('show-list')
   })
   
   var md = window.matchMedia("(max-width: 768px)")

@@ -195,7 +195,7 @@
 .arrow-link:hover .forward-arrow {
     transform: rotate(-45deg) translate(8px, 8px);
 }
-.hidden-list {
+.expand {
     max-height: 0px;
     transform: scaleY(0);
     transform-origin: top center;
