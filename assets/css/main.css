@@ -62,6 +62,15 @@
     transform-origin: center center;
     width: 35px;
 }
+.drawer-language-options {
+    position: absolute;
+    bottom: 20px;
+    left: auto;
+}
+.drawer-language-options .active{
+    border-bottom: 2px solid #B8A4E2;
+    padding-bottom: 15px;
+}
 .menu-list h2 {
     font-size: 3rem;
 }
