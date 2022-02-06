@@ -127,7 +127,7 @@
 
 /* Careers */
 
-.item-1 {
+/* .item-1 {
     grid-area: text;
 }
 .item-2 {
@@ -149,7 +149,7 @@
     "join join join"
     ". . ."
     "text text text";
-}
+} */
 
 .down-arrow {
     display: inline-block;
@@ -249,7 +249,7 @@
     }
 
     /* Careers */
-
+/* 
     .item-1 {
         grid-area: text;
     }
@@ -275,7 +275,7 @@
         "text . image image image"
         ". . image image image"
         "join . . . careers";
-    }
+    } */
 
     .lottie-icons {
         width: 200px;
