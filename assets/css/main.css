@@ -1,99 +1,3 @@
-@font-face {
-    font-family: "Lucifer Medium";
-    src: url("../fonts/lucifer_sans_medium.woff2") format("woff2"),
-    url("../fonts/lucifer_sans_medium.woff") format("woff"),
-    url("../fonts/lucifer-sans-medium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "Lucifer Light";
-    src: url("../fonts/lucifer_sans_light.woff2") format("woff2"),
-    url("../fonts/lucifer_sans_light.woff") format("woff"),
-    url("../fonts/lucifer-sans-light.otf") format("opentype");
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lucifer Medium", sans-serif;
-    color: #17285B;
-    font-size: 1.1rem;
-    overflow-x: hidden;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-a:hover {
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-/* FONTS */
-h1,h2,h3 {
-    letter-spacing: -1px;
-}
-h1 {
-    font-size: 2.5rem;
-}
-h2 {
-    font-size: 2.5rem;
-}
-h2.large {
-    font-size: 3.4rem;
-}
-h3 {
-    font-size: 1.8rem;
-}
-p {
-    font-family: "Lucifer Light", sans-serif;
-}
-p.large {
-    font-family: "Lucifer Medium", sans-serif;
-}
-p.text-small {
-    font-size: 0.9rem;
-}
-/* FONTS */
-
-
-.l300 {
-    font-family: "Lucifer Light", sans-serif;
-    font-weight: 300;
-}
-
-.bkg-darkblue {
-    background-color: #17285B;
-}
-.bkg-blue {
-    background-color: #92B0B7;
-}
-.bkg-pink {
-    background-color: #E6C1B6;
-}
-.bkg-green {
-    background-color: #2F3D2A;
-}
-.bkg-lavender {
-    background-color: #B59FDD;
-}
-.color-pink {
-    color: #E6C1B6;
-}
-.color-red {
-    color: #590000;
-}
-.color-lavender {
-    color: #B59FDD;
-}
 .button-clickable {
     cursor: pointer;
 }
@@ -120,6 +24,7 @@ p.text-small {
     z-index: 1;
     transition: 0.4s;
     transform: translateX(-100vw);
+    padding: 0 8vw;
 }
 .drawer.show {
     transform: translateX(0);
@@ -127,6 +32,7 @@ p.text-small {
 .drawer .logo {
     top: 25px;
     left: 8vw;
+    width: 160px;
 }
 .drawer .close {
     position: absolute;
@@ -156,9 +62,6 @@ p.text-small {
     transform-origin: center center;
     width: 35px;
 }
-.menu-list {
-    padding-left: 8vw;
-}
 .menu-list h2 {
     font-size: 3rem;
 }
@@ -175,7 +78,7 @@ p.text-small {
     height: 2px;
     transition: 0.4s;
 }
-.link--hover:hover div {
+.link--hover:hover > div {
     width: 100%;
 }
 .language-option a.active div {
@@ -213,24 +116,102 @@ p.text-small {
     transform: translate(0px);
 }
 
+/* Careers */
+
+.item-1 {
+    grid-area: text;
+}
+.item-2 {
+    grid-area: join;
+}
+.item-3 {
+    grid-area: image;
+}
+.item-4 {
+    display: none;
+}
+.career-header-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100% 40px 100% 10px 100%;
+    grid-template-areas: 
+    "image image image"
+    ". . ."
+    "join join join"
+    ". . ."
+    "text text text";
+}
+
+.down-arrow {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid #17285B;
+    border-bottom: 3px solid #17285B;
+    position: relative;
+}
+.down-arrow > div {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #17285B;
+    transform: rotate(-45deg);
+    left: -4px;
+    bottom: 4px;
+}
+
+.section-title--rotated {
+    transform: rotate(-15deg) translate(1rem, -4rem);
+}
+
+.lottie-icons {
+    width: 150px;
+}
+
+.lottie-scale {
+    transform: scale(1.4);
+}
+
+.job-item {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 25px;
+    margin-top: 20px;
+}
+.forward-arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid #17285B;
+    border-bottom: 3px solid #17285B;
+    position: relative;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+.forward-arrow > div {
+    position: absolute;
+    width: 21px;
+    height: 3px;
+    background-color: #17285B;
+    transform: rotate(45deg);
+    left: -7px;
+    bottom: 4px;
+}
+.arrow-link:hover .forward-arrow {
+    transform: rotate(-45deg) translate(8px, 8px);
+}
+.hidden-list {
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: 0.4s;
+}
+.show-list {
+    max-height: 100%;
+    transform: scaleY(100%);
+}
+
+
 @media screen and (min-width: 768px) {
-    /* FONTS */
-    h1 {
-        font-size: 3.3rem;
-    }
-    h2 {
-        font-size: 3.3rem;
-    }
-    h2.large {
-        font-size: 3.3rem;
-    }
-    h3 {
-        font-size: 2.3rem;
-    }
-    p.large {
-        font-family: "Lucifer Medium", sans-serif;
-    }
-    /* FONTS */
     .hero-container {
         height: 70vh;
     }
@@ -257,35 +238,58 @@ p.text-small {
     .img-overflow {
         padding: 0 10px;
     }
+
+    /* Careers */
+
+    .item-1 {
+        grid-area: text;
+    }
+    .item-2 {
+        grid-area: join;
+    }
+    .item-3 {
+        grid-area: image;
+    }
+
+    .item-4 {
+        display: block;
+        grid-area: careers;
+        align-self: end;
+        justify-self: end;
+    }
+    .career-header-grid-container {
+        display: grid;
+        grid-template-columns: 40% 10% 10% 20% 20%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". . image image image"
+        "text . image image image"
+        ". . image image image"
+        "join . . . careers";
+    }
+
+    .lottie-icons {
+        width: 200px;
+    }
+
+    .lottie-scale {
+        transform: scale(1);
+    }
+
+    .job-item {
+        border-bottom: 1px solid #17285B;
+        padding-bottom: 20px;
+        margin-top: 18px;
+    }
 }
 
 
 @media screen and (min-width: 992px) {
-    /* FONTS */
-    h1 {
-        font-size: 3.8rem;
+    .drawer {
+        padding: 0 5vw;
     }
-    h2 {
-        font-size: 3.8rem;
-    }
-    h2.large {
-        font-size: 5.5rem;
-    }
-    h3 {
-        font-size: 3rem;
-    }
-    p.large {
-        font-size: 1.5rem;
-    }
-    p.footer-links--small {
-        font-size: 1.1rem;
-    }
-    /* FONTS */
     .drawer .logo {
         left: 5vw;
-    }
-    .menu-list {
-        padding-left: 5vw;
     }
     .menu-list h2 {
         font-size: 3.8rem;
@@ -306,5 +310,11 @@ p.text-small {
     .img-overflow img {
         height: auto;
         width: 100%;
+    }
+
+    /* Career */
+
+    .section-title--rotated {
+        transform: rotate(-15deg) translateY(0px);
     }
 }

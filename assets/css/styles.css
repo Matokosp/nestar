@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Lucifer Medium";
+    src: url("../fonts/lucifer_sans_medium.woff2") format("woff2"),
+    url("../fonts/lucifer_sans_medium.woff") format("woff"),
+    url("../fonts/lucifer-sans-medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lucifer Light";
+    src: url("../fonts/lucifer_sans_light.woff2") format("woff2"),
+    url("../fonts/lucifer_sans_light.woff") format("woff"),
+    url("../fonts/lucifer-sans-light.otf") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucifer Medium", sans-serif;
+    color: #17285B;
+    font-size: 1.1rem;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* FONTS */
+h1,h2,h3 {
+    letter-spacing: -1px;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h2.large {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h3.large {
+    font-size: 2.4rem;
+}
+p {
+    font-family: "Lucifer Light", sans-serif;
+}
+p.large {
+    font-family: "Lucifer Medium", sans-serif;
+}
+p.large.xs-large {
+    font-size: 1.5rem;
+}
+p.text-small {
+    font-size: 0.9rem;
+}
+.l300 {
+    font-family: "Lucifer Light", sans-serif;
+    font-weight: 300;
+}
+p.large.l300 {
+    font-family: "Lucifer Light", sans-serif;
+    font-weight: 300;
+}
+.l400 {
+    font-family: "Lucifer Medium", sans-serif;
+    font-weight: 300;
+}
+/* FONTS */
+
+.bkg-darkblue {
+    background-color: #17285B;
+}
+.bkg-blue {
+    background-color: #92B0B7;
+}
+.bkg-pink {
+    background-color: #E6C1B6;
+}
+.bkg-green {
+    background-color: #2F3D2A;
+}
+.bkg-lavender {
+    background-color: #B59FDD;
+}
+.bkg-red {
+    background-color: #590000;
+}
+.color-pink {
+    color: #E6C1B6;
+}
+.color-red {
+    color: #590000;
+}
+.color-lavender {
+    color: #B59FDD;
+}
+.border-bottom-blue {
+    border-bottom: 2px solid #92B0B7;
+}
+.border-bottom-white {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .bkg-md-white {
+        background-color: white !important;
+    }
+    /* FONTS */
+    h1 {
+        font-size: 3.3rem;
+    }
+    h2 {
+        font-size: 3.3rem;
+    }
+    h2.large {
+        font-size: 3.3rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+    p.large {
+        font-family: "Lucifer Medium", sans-serif;
+    }
+    /* FONTS */
+    .border-bottom-md-blue {
+        border-bottom: 2px solid #92B0B7 !important;
+    }
+    .border-bottom-md-white {
+        border-bottom: 2px solid #FFFFFF !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* FONTS */
+    h1 {
+        font-size: 3.8rem;
+    }
+    h2 {
+        font-size: 3.8rem;
+    }
+    h2.large {
+        font-size: 5.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h3.large {
+        font-size: 3rem;
+    }
+    h3.h3-small {
+        font-size: 2.3rem;
+    }
+    p.large {
+        font-size: 1.5rem;
+    }
+    p.footer-links--small {
+        font-size: 1.1rem;
+    }
+    /* FONTS */
+}
+

@@ -5,8 +5,232 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nestar | Careers</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    
+    <div class="col-12 m-auto position-fixed navbar" id="navbar">
+        <nav id="drawer" class="drawer position-absolute min-vh-100 min-vw-100 bkg-green top-0 row justify-content-between align-items-center">
+            <a class="position-absolute logo" href="/"><img src="./assets/images/logo-purple.svg" alt="Nestar"></a>
+            <div id="closeDrawer" class="close">
+                <div class="bkg-lavender"></div>
+                <div class="bkg-lavender"></div>
+            </div>
+            <div class="d-flex flex-column justify-content-center vh-100 menu-list col-4">
+                <h2 class="color-lavender"><a href="/" class="link--hover">Home<div class="bkg-lavender"></div></a></h2>
+                <h2 class="color-lavender"><a href="#" class="link--hover">About<div class="bkg-lavender"></div></a></h2>
+                <h2 class="color-lavender"><a href="career.html" class="link--hover">Careers<div class="bkg-lavender"></div></a></h2>
+                <h2 class="color-lavender"><a href="#" class="link--hover">Contact<div class="bkg-lavender"></div></a></h2>
+            </div>
+            <div class="col-5 d-none d-lg-block">
+                <img class="w-100" src="./assets/images/lighting.jpg" />
+            </div>
+        </nav>
+        <div class="container-xxl m-auto d-flex justify-content-between color-red">
+                <a href="/"><img src="./assets/images/logo-red.svg" alt="Nestar"></a>
+                <div class="d-flex justify-content-between">
+                    <div class="d-none d-sm-block me-5 language-option">
+                        <a class="l300 pb-2 me-2 link--hover active">EN<div class="bkg-red"></div></a>
+                        <a class="l300 pb-2 link--hover">DE<div class="bkg-red"></div></a>
+                    </div>
+                    <div id="openDrawer" class="button-clickable"><span>Menu</span></div>
+                </div>
+        </div>
+    </div>
+    <header class="pt-5 pb-5 bkg-blue color-red min-vh-100">
+        <div class="container-xxl mt-5 mb-5">
+            <div class="row justify-content-between">
+                <div class="career-header-grid-container">
+                    <div class="item-1"><p class="large l300">Do you want to work in real estate but not really a real estate person? Then you&#8217;ll probably be happy here. We see ourselves as a family. And just as warm and inclusive we are to our tenants, we are to each other. Because we truly believe that brings out the best in people.</p></div>
+                    <div class="item-2"><h2 class="m-0">Join the family</h2></div>
+                    <div class="item-3">
+                        <img class="w-100 d-none d-md-block" src="./assets/images/join-the-family.jpg" alt="Join the family">
+                        <img class="w-100 d-block d-md-none" src="./assets/images/lighting.jpg">
+                    </div>
+                    <div class="item-4"><p class="l400 m-0">Careers</p></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pt-5 pb-5">
+        <div class="container-xxl mt-5 mb-5">
+            <div class="row justify-content-between align-items-start pb-5">
+                <div class="slide-in slide-right col-12 col-md-3 pt-md-5">
+                    <h2 class="section-title--rotated pt-md-5 text-center text-md-left">Why us?</h2>
+                </div>
+                <div class="col-12 col-md-7">
+                    <img class="w-100 slide-in slide-left" src="./assets/images/us.jpg" alt="This is us">
+                    <div class="row mt-5 justify-content-between">
+                        <div class="col-12 col-sm-8">
+                            <p>We work hard but are also amply rewarded. Discounts in stores, studying English during working hours and getting 30-days a year of paid vacation, just to mention a few of our benefits. Equally beneficial is your mandate to influence and shape the company. We grow together. As professionals, as people and as a company.</p>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            <a class="link--hover" href="#">
+                                Current openings <span class="down-arrow"><div></div></span>
+                                <div class="bkg-darkblue"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between mt-md-5 mb-md-5 pb-md-5 pt-md-5 text-md-center">
+                <div class="col-12 col-md-5 slide-in slide-down mb-5 mb-md-0">
+                    <h3 class="h3-small">“Lorem ipsum dolor siting amet, consectetur adip iscing, sed do eiusmod tempor incididunt”</h3>
+                    <p>— Firstname Lastname, Working title</p>
+                </div>
+                <div class="col-12 col-md-5 slide-in slide-down">
+                    <h3 class="h3-small">“Lorem ipsum dolor siting amet, consectetur adip iscing, sed do eiusmod tempor incididunt”</h3>
+                    <p>— Firstname Lastname, Working title</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bkg-blue pt-5 pb-5">
+        <div class="container-xxl mt-5 mb-5 pb-5 color-red">
+            <div class="row pb-5">
+                <h3 class="large">Employee benefits</h3>
+            </div>
+            <div class="row justify-content-between mt-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <lottie-player class="lottie-icons" src="./assets/lottie_icons/icon_vacation.json" background="transparent" speed="1" loop autoplay/>
+                    </div>
+                    <p class="large xs-large">30-day vacation</p>
+                    <p>Paid 30-day vacation excluding 25/12 and 1/1</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <lottie-player class="lottie-icons" src="./assets/lottie_icons/icon_hours.json" background="transparent" speed="1" loop autoplay/>
+                    </div>
+                    <p class="large xs-large">Flexible working hours</p>
+                    <p>You decide what working hours work best for you</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <lottie-player class="lottie-icons" src="./assets/lottie_icons/icon_discounts.json" background="transparent" speed="1" loop autoplay/>
+                    </div>
+                    <p class="large xs-large">Employee discounts</p>
+                    <p>Discounts from more than 600 brands through Corporate Benefits</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <lottie-player class="lottie-icons" src="./assets/lottie_icons/icon_courses.json" background="transparent" speed="1" loop autoplay/>
+                    </div>
+                    <p class="large xs-large">English courses</p>
+                    <p>Improve your skills in English during working hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 pb-5">
+        <div class="container-xxl mt-5 mb-5 pb-5">
+            <div class="row pb-5 justify-content-between">
+                <div class="col-12 mb-2">
+                    <p class="l400 border-bottom-blue pb-3">Our values</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3>The culture that shapes us</h3>
+                </div>
+                <div class="col-12 col-md-5">
+                    <p>It&#8217;s not just words. It&#8217;s our philosophy. And it runs all the way from inside our office walls to the cities of Germany.</p>
+                </div>
+            </div>
+            <div class="row justify-content-between mt-5">
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <div class="row align-items-center">
+                        <div class="d-flex col-4 col-md-12 justify-content-center">
+                            <lottie-player class="lottie-icons lottie-scale" src="./assets/lottie_icons/icon_inclusive.json" background="transparent" speed="1" loop autoplay/>
+                        </div>
+                        <div class="col-8 col-md-12">
+                            <p class="large">Inclusive</p>
+                            <p>We embrace diversity, openness and working tightly together as a team.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <div class="row align-items-center">
+                        <div class="d-flex col-4 col-md-12 justify-content-center">
+                            <lottie-player class="lottie-icons lottie-scale" src="./assets/lottie_icons/icon_efficient.json" background="transparent" speed="1" loop autoplay/>
+                        </div>
+                        <div class="col-8 col-md-12">
+                            <p class="large">Efficient</p>
+                            <p>Our processes are streamlined. Out of respect for our tenants&#8217; time and because it helps our company grow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
+                    <div class="row align-items-center">
+                        <div class="d-flex col-4 col-md-12 justify-content-center">
+                            <lottie-player class="lottie-icons lottie-scale" src="./assets/lottie_icons/icon_progressive.json" background="transparent" speed="1" loop autoplay/>
+                        </div>
+                        <div class="col-8 col-md-12">
+                            <p class="large">Progressive</p>
+                            <p>We are modern, light-footed and quick to embrace new technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 pb-5 bkg-blue bkg-md-white">
+        <div class="container-xxl mt-5 mb-5 pb-5">
+            <h2 class="mb-2 mb-md-5">Want to work with us ?</h2>
+            <div class="w-100">
+                <div class="pt-5 border-bottom-white border-bottom-md-blue">
+                    <div class="col-12 col-md-10">
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-none d-md-block"><p class="l400">Job role</p></div>
+                            <div class="col-12 col-md-6 d-none d-md-block"><p class="l400">Category</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3" id="jobs"></div>
+                <div class="mt-3 hidden-list" id="hiddenJobs"></div>
+                <p class="large text-center d-md-none button-clickable mt-5" id="showList">See more</p>
+            </div>
+        </div>
+    </section>
+    <footer class="bkg-darkblue pt-5 pb-5">
+        <div class="container-xxl color-pink">
+            <div class="row justify-content-lg-between">
+                <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+                    <div class="row">
+                        <div class="col-6 col-lg-12">
+                            <p class="large">Contact</p>
+                            <p>Alexanderplatz <br>
+                                10787 Berlin
+                            </p>
+                            <p>info@nestar.de</p>
+                        </div>
+                        <div class="col-6 col-lg-12 mt-lg-5">
+                            <p class="text-small">© Nestar 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 justify-content-lg-between d-flex flex-column">
+                    <div class="row mb-5">
+                        <div class="col-6"><a href="index.html"><p class="large footer-links--small">Home</p></a></div>
+                        <div class="col-6"><a href="career.html"><p class="large footer-links--small">Careers</p></a></div>
+                        <div class="col-6"><a href="#"><p class="large footer-links--small">About</p></a></div>
+                        <div class="col-6"><a href="#contact"><p class="large footer-links--small">Contact</p></a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-lg-3"><a><p class="text-small">Imprint</p></a></div>
+                        <div class="col-6 col-lg-3"><a><p class="text-small">Xing</p></a></div>
+                        <div class="col-6 col-lg-3"><a><p class="text-small">Privacy Policy</p></a></div>
+                        <div class="col-6 col-lg-3"><a><p class="text-small">Cookies Policy</p></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="./assets/js/careers/jobsList.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/careers/addJobs.js"></script>
 </body>
 </html>
