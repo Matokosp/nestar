@@ -127,29 +127,16 @@
 
 /* Careers */
 
-/* .item-1 {
-    grid-area: text;
-}
-.item-2 {
-    grid-area: join;
-}
-.item-3 {
-    grid-area: image;
-}
 .item-4 {
     display: none;
 }
 .career-header-grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100% 40px 100% 10px 100%;
-    grid-template-areas: 
-    "image image image"
-    ". . ."
-    "join join join"
-    ". . ."
-    "text text text";
-} */
+    display: flex;
+    flex-direction: column-reverse;
+}
+.item-2 {
+    margin: 20px 0;
+}
 
 .down-arrow {
     display: inline-block;
@@ -209,7 +196,7 @@
     transform: rotate(-45deg) translate(8px, 8px);
 }
 .hidden-list {
-    max-height: 0;
+    max-height: 0px;
     transform: scaleY(0);
     transform-origin: top center;
     transition: 0.4s;
@@ -249,7 +236,7 @@
     }
 
     /* Careers */
-/* 
+
     .item-1 {
         grid-area: text;
     }
@@ -275,7 +262,7 @@
         "text . image image image"
         ". . image image image"
         "join . . . careers";
-    } */
+    }
 
     .lottie-icons {
         width: 200px;
