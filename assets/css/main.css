@@ -197,12 +197,12 @@
 }
 .expand {
     /* max-height: 0px; */
-    transform: scaleY(0);
+    /* transform: scaleY(0); */
     transform-origin: top center;
     transition: 0.4s;
 }
 .show-list {
-    /* max-height: 100%; */
+    max-height: 100%;
     transform: scaleY(100%);
 }
 
